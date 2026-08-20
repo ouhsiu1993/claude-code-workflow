@@ -163,6 +163,12 @@ description: 每次程式碼改動用 STAR 說明、額外問題另立區塊、�
 
 ---
 
+## 致謝
+
+Claude Code 有 output style 這個功能，是看 Gary Chen 的影片〈[你以為 Claude 降智，其實是你少設了這個](https://www.youtube.com/watch?v=E8Bx9OlpmdM)〉才知道的。規則的內容是照自己的需求寫的，但沒看到那支影片的話，我大概不會發現可以這樣調。
+
+---
+
 ## License
 
 MIT

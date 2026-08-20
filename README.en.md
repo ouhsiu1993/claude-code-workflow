@@ -1,7 +1,6 @@
 # Claude Code Workflow
 
-[![繁體中文](https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-README-e9ecef?style=for-the-badge)](README.md)
-![English](https://img.shields.io/badge/English-current-0b7285?style=for-the-badge)
+[繁體中文](README.md) ｜ **[English](README.en.md)**
 
 Once the AI has finished writing the code, the time goes into working out what it actually did.
 
@@ -139,7 +138,7 @@ For a single project, create `.claude/output-styles/` in the project root and pu
 
 ### 3. Turn it on
 
-In Claude Code:
+Run this in the Claude Code **terminal**. On the desktop app that is the terminal tab in the top right, not the chat panel.
 
 ```bash
 /output-style

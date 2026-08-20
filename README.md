@@ -1,7 +1,6 @@
 # Claude Code Workflow
 
-![繁體中文](https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-current-0b7285?style=for-the-badge)
-[![English](https://img.shields.io/badge/English-README-e9ecef?style=for-the-badge)](README.en.md)
+**[繁體中文](README.md)** ｜ [English](README.en.md)
 
 AI 把程式寫完之後，真正花時間的是看懂它做了什麼。
 
@@ -136,7 +135,7 @@ New-Item -ItemType Directory -Force "$HOME\.claude\output-styles"
 
 ### 3. 啟用
 
-在 Claude Code 中輸入：
+在 Claude Code 的**終端機**輸入以下指令。桌面版的話是右上角的 terminal 分頁，不是左邊的對話視窗。
 
 ```bash
 /output-style

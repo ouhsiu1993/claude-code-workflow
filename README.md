@@ -1,6 +1,7 @@
 # Claude Code Workflow
 
-**繁體中文** ｜ [English](README.en.md)
+![繁體中文](https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-current-0b7285?style=for-the-badge)
+[![English](https://img.shields.io/badge/English-README-e9ecef?style=for-the-badge)](README.en.md)
 
 AI 把程式寫完之後，真正花時間的是看懂它做了什麼。
 

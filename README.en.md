@@ -1,6 +1,7 @@
 # Claude Code Workflow
 
-[繁體中文](README.md) ｜ **English**
+[![繁體中文](https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-README-e9ecef?style=for-the-badge)](README.md)
+![English](https://img.shields.io/badge/English-current-0b7285?style=for-the-badge)
 
 Once the AI has finished writing the code, the time goes into working out what it actually did.
 

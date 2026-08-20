@@ -193,6 +193,8 @@ The first version reads as professional, yet gives no way to tell how far it was
 
 I found out Claude Code had output styles from Gary Chen's video [你以為 Claude 降智，其實是你少設了這個](https://www.youtube.com/watch?v=E8Bx9OlpmdM) (Traditional Chinese). The rules here are written to my own needs. If you want to write your own, the video covers it more thoroughly than this page does.
 
+If you want different rules, fork it and make it your own.
+
 ---
 
 ## License

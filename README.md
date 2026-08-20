@@ -190,6 +190,8 @@ New-Item -ItemType Directory -Force "$HOME\.claude\output-styles"
 
 output style 這個功能，是看 Gary Chen 的影片〈[你以為 Claude 降智，其實是你少設了這個](https://www.youtube.com/watch?v=E8Bx9OlpmdM)〉才知道的。規則的內容依自己的需求撰寫。想自己寫一份的話，影片裡有完整說明，比這裡講得清楚。
 
+想要不一樣的規則，直接 fork 改成自己的版本就好。
+
 ---
 
 ## License

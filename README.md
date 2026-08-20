@@ -1,5 +1,7 @@
 # Claude Code Workflow
 
+[English](README.en.md)
+
 AI 把程式寫完之後，真正花時間的是把它講給別人聽。
 
 這個 repo 收錄一份 Claude Code 的 output style，內容是把專案管理既有的回報紀律，搬到人與 AI 之間。繁體中文。
@@ -18,13 +20,17 @@ Claude Code 允許用一份 markdown 檔案，定義它回覆的方式。
 
 ## 起因
 
-Claude Code 曾經回報「已完成並通過測試」。那個專案裡沒有測試檔案。
+模型一直在變強，推理的時間也越拉越長。等得久，期待自然跟著往上。
 
-單一次不構成問題。累積幾次之後，你會停止相信任何一句回報——包括真的做對的那些。
+但這幾個版本用下來，回報的品質沒有跟上推理的品質。整段專業術語、講不到重點、或者跑完之後沒有結論——你得再問一次「所以修好了嗎」、「這句話是什麼意思」。
+
+代價是雙重的。追問一次，token 再燒一輪，而現在每一輪的等待時間都比從前長。趕著修 bug、趕著上線、趕著出報告的時候，這個成本直接反映在時程上。
+
+久了還會變成另一件事：不敢相信它的回報。它說「已完成並通過測試」，那個專案裡沒有測試檔案。單一次不構成問題，累積幾次之後，連它真的做對的時候，你也不會直接採信。
 
 另外兩種狀況也反覆出現。指定修改某處，它順帶調整了其他看起來不理想的地方，等發現時 diff 已經難以逐項確認。或者回覆通篇術語，自己讀得懂，要轉給別人時得重寫一遍。
 
-三件事都與程式碼品質無關。它們發生在交付之後。
+這些都與程式碼品質無關。它們發生在交付之後。
 
 ---
 
@@ -102,8 +108,8 @@ STAR 是績效檢討與事件報告的既有格式。它的作用是強迫從問
 
 | 作業系統 | 使用檔案 |
 |---|---|
-| Windows（PowerShell） | `output-styles/star-report-windows.md` |
-| macOS / Linux（bash、zsh） | `output-styles/star-report-unix.md` |
+| Windows（PowerShell） | `output-styles/zh-TW/star-report-windows.md` |
+| macOS / Linux（bash、zsh） | `output-styles/zh-TW/star-report-unix.md` |
 
 兩份內容相同，差異只在它建議執行的指令採用哪種 shell 語法。
 
@@ -178,28 +184,9 @@ New-Item -ItemType Directory -Force "$HOME\.claude\output-styles"
 
 ---
 
-## 改成自己的版本
-
-以下是我的偏好，依需求直接修改檔案即可。
-
-不使用 STAR 四段的話，換成團隊既有的格式。讀者都是工程背景的話，第三條白話解釋可以移除，能省下可觀的 token。檔案中目前把 `api`、`sdk`、`schema` 列為免解釋名詞，這份清單依團隊調整。要換語言，改掉「全程使用繁體中文」那一行。
-
-檔案開頭的 frontmatter 決定它在 `/output-style` 選單中的顯示：
-
-```yaml
----
-name: star-report
-description: 每次程式碼改動用 STAR 說明、額外問題另立區塊、專有名詞附白話解釋
----
-```
-
-改了 `name`，指令要一併調整。
-
----
-
 ## 致謝
 
-output style 這個功能，是看 Gary Chen 的影片〈[你以為 Claude 降智，其實是你少設了這個](https://www.youtube.com/watch?v=E8Bx9OlpmdM)〉才知道的。規則的內容依自己的需求撰寫，但若沒有那支影片，我不會想到可以這樣設定。
+output style 這個功能，是看 Gary Chen 的影片〈[你以為 Claude 降智，其實是你少設了這個](https://www.youtube.com/watch?v=E8Bx9OlpmdM)〉才知道的。規則的內容依自己的需求撰寫。想自己寫一份的話，影片裡有完整說明，比這裡講得清楚。
 
 ---
 

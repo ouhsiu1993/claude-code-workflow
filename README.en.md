@@ -1,8 +1,8 @@
 # Claude Code Workflow
 
-[繁體中文](README.md)
+[繁體中文](README.md) ｜ **English**
 
-Once the AI has finished writing the code, the time goes into explaining it to everyone else.
+Once the AI has finished writing the code, the time goes into working out what it actually did.
 
 This repo holds a Claude Code output style that moves an existing project-management reporting discipline into the space between a person and an AI.
 
@@ -36,19 +36,21 @@ None of this is about code quality. It happens after delivery.
 
 ## Three rules, one problem
 
-Finishing the code is not the end. It is the start of explaining.
+> **The report is written for engineers.**
 
-Progress goes up the chain, changes go to the client, reasoning goes to the designer. If what the AI hands back is a technical description, I have to understand it first and then translate it. The same work, done twice.
+It assumes the reader can fill in the context: knows the jargon, knows what that function used to do, can judge whether the change was the right one. Not everyone using it is standing in that position.
 
-So the three rules serve a single goal: **change reports that can be forwarded as they are.**
+Not following it costs more than one missing detail. You cannot tell whether the work was done correctly, so you either accept it wholesale or ask again.
+
+So the three rules serve a single goal: **make what happened legible to someone without an engineering background.**
 
 | Rule | The discipline it borrows from |
 |---|---|
-| STAR report | The format used in performance reviews and incident reports — stakeholders already read this shape |
+| STAR report | The format used in performance reviews and incident reports — readable without an engineering background |
 | Findings in a separate section | Change management: raise what falls outside scope, do not act on it unilaterally |
-| Jargon explained in plain language | Stakeholder communication: output should be forwardable without a second translation |
+| Jargon explained in plain language | Removes the comprehension barrier — you cannot judge what you cannot read |
 
-Engineers get less out of these three. They can read the output, judge the scope themselves, and answer to no one. The people who need them are the ones explaining every day.
+Engineers get less out of these three: they can read the output, judge the scope themselves, and answer to no one. The people who need them are the ones writing code with AI every day whose trade is not engineering.
 
 ---
 
@@ -70,7 +72,7 @@ STAR is the format performance reviews and incident reports already use. Its val
 
 Two supporting rules matter more than the format itself:
 
-**"What was wrong" starts from something the user can see.** Write "the screen freezes after pressing submit", not "the promise never resolves". Only then can the report be handed onward untouched.
+**"What was wrong" starts from something the user can see.** Write "the screen freezes after pressing submit", not "the promise never resolves". The first is readable without an engineering background. The second is not.
 
 **"What happened" must not be inflated.** No tests run, say so. Tests failed, show the result. "Confirmed" only when it was genuinely verified. This is the load-bearing rule — whether a report can be trusted comes down to this line.
 
@@ -97,7 +99,7 @@ Explained on first use, covering two things: what it is, and why it is being use
 > Every keystroke would otherwise hit the server, which is wasteful, so it waits 300ms
 > after the user stops typing).
 
-This one buys back translation time. If a change report can go straight to a colleague without an engineering background, the middle layer stops existing.
+This rule is what makes the other two work. However complete the four STAR lines are, they are unreadable if every second word is jargon — and what you cannot read, you cannot evaluate. All that is left is to take it on faith.
 
 The reader has no engineering background. If the explanation grows new jargon of its own, it is broken — rewrite it.
 
@@ -183,7 +185,7 @@ Ask it to change any file. If the reply ends with a "### Change report" block, i
 > **Confirmed cause**: There is no error handling here; the component throws when the request fails.
 > **Suggested next step**: An error state would help, but that is outside this change. Want it handled too?
 
-The first version reads as professional, yet gives no way to tell how far it was verified, or whether that error boundary was something it added on its own. The second states both, and can go straight into a status update.
+The first version reads as professional, yet gives no way to tell how far it was verified, or whether that error boundary was something it added on its own. The second states both, and can be read start to finish without an engineering background.
 
 ---
 
